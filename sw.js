@@ -4,12 +4,11 @@ this.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(cacheData).then((cache) => {
       cache.addAll([
-        // "/pwaReservation/",
-        // "/pwaReservation/static/js/bundle.js",
-        // // "/static/media/mytonaLogo.97eec5474c976daa5efa.png",
-        // "/pwaReservation/index.html",
-        // // "/static/media/submited.6cef1921abdba32c5b0e.gif",
-        // "/pwaReservation/",
+        "/",
+        "/static/js/bundle.js",
+        // "/static/media/mytonaLogo.97eec5474c976daa5efa.png",
+        "/index.html",
+        // "/static/media/submited.6cef1921abdba32c5b0e.gif",
       ]);
     })
   );

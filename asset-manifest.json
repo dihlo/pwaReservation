@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dihlo/pwaReservation/static/css/main.0d95dbc7.css",
-    "main.js": "/dihlo/pwaReservation/static/js/main.ac101c7c.js",
-    "static/media/submited.gif": "/dihlo/pwaReservation/static/media/submited.6cef1921abdba32c5b0e.gif",
-    "static/media/mytonaLogo.png": "/dihlo/pwaReservation/static/media/mytonaLogo.97eec5474c976daa5efa.png",
-    "index.html": "/dihlo/pwaReservation/index.html",
-    "main.0d95dbc7.css.map": "/dihlo/pwaReservation/static/css/main.0d95dbc7.css.map",
-    "main.ac101c7c.js.map": "/dihlo/pwaReservation/static/js/main.ac101c7c.js.map"
+    "main.css": "/pwaReservation/static/css/main.0d95dbc7.css",
+    "main.js": "/pwaReservation/static/js/main.86c920b4.js",
+    "static/media/submited.gif": "/pwaReservation/static/media/submited.6cef1921abdba32c5b0e.gif",
+    "static/media/mytonaLogo.png": "/pwaReservation/static/media/mytonaLogo.97eec5474c976daa5efa.png",
+    "index.html": "/pwaReservation/index.html",
+    "main.0d95dbc7.css.map": "/pwaReservation/static/css/main.0d95dbc7.css.map",
+    "main.86c920b4.js.map": "/pwaReservation/static/js/main.86c920b4.js.map"
   },
   "entrypoints": [
     "static/css/main.0d95dbc7.css",
-    "static/js/main.ac101c7c.js"
+    "static/js/main.86c920b4.js"
   ]
 }
