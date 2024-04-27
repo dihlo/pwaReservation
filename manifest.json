@@ -5,8 +5,8 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/pwaReservation/",
+  "start_url": "/pwaReservation/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
