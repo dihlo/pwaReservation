@@ -35,7 +35,7 @@ this.addEventListener("fetch", (event) => {
       } else {
         return fetch(event.request).then(function (res) {
           return caches.open(cacheData).then(function (cache) {
-            cache.put(event.request.url, res.clone());
+            if (cache) cache.put(event.request.url, res.clone());
             return res;
           });
         });
