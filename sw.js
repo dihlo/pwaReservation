@@ -1,16 +1,16 @@
 let cacheData = "appV1";
 
 this.addEventListener("install", (event) => {
-  event.waitUntil(
-    caches.open(cacheData).then((cache) => {
-      cache.addAll([
-        "/",
-        "/static/js/bundle.js",
-        "/pwaReservation/static/media/mytonaLogo.97eec5474c976daa5efa.png",
-        "/index.html",
-      ]);
-    })
-  );
+  // event.waitUntil(
+  //   caches.open(cacheData).then((cache) => {
+  //     cache.addAll([
+  //       "/",
+  //       "/static/js/bundle.js",
+  //       "/pwaReservation/static/media/mytonaLogo.97eec5474c976daa5efa.png",
+  //       "/index.html",
+  //     ]);
+  //   })
+  // );
 });
 
 this.addEventListener("activate", function (event) {
