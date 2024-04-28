@@ -13,6 +13,19 @@ this.addEventListener("install", (event) => {
   );
 });
 
+this.addEventListener("activate", function (event) {
+  event.waitUntil(
+    caches.keys().then(function (keyList) {
+      return Promise.all(
+        keyList.map(function (key) {
+          return caches.delete(key);
+        })
+      );
+    })
+  );
+  return this.clients.claim();
+});
+
 this.addEventListener("fetch", (event) => {
   console.log("fetch", event.request.url);
   event.respondWith(
