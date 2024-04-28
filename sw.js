@@ -42,7 +42,6 @@ this.addEventListener("fetch", (event) => {
       }
     })
   );
-  event.respondWith(cacheFirst(event.request));
 });
 
 this.addEventListener("fetch", (event) => {
