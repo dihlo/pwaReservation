@@ -6,9 +6,8 @@ this.addEventListener("install", (event) => {
       cache.addAll([
         "/",
         "/static/js/bundle.js",
-        // "/static/media/mytonaLogo.97eec5474c976daa5efa.png",
+        "/pwaReservation/static/media/mytonaLogo.97eec5474c976daa5efa.png",
         "/index.html",
-        // "/static/media/submited.6cef1921abdba32c5b0e.gif",
       ]);
     })
   );
@@ -16,7 +15,20 @@ this.addEventListener("install", (event) => {
 
 this.addEventListener("fetch", (event) => {
   console.log("fetch", event.request.url);
-
+  event.respondWith(
+    caches.match(event.request).then(function (response) {
+      if (response) {
+        return response;
+      } else {
+        return fetch(event.request).then(function (res) {
+          return caches.open(cacheData).then(function (cache) {
+            cache.put(event.request.url, res.clone());
+            return res;
+          });
+        });
+      }
+    })
+  );
   event.respondWith(cacheFirst(event.request));
 });
 
