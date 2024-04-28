@@ -2,6 +2,7 @@
   "name": "Mytona coworking reserve",
   "short_name": "MyReserve",
   "theme_color": "#e4e4e4",
+  "description": "Mytona coworking reserve in Bangkok",
   "background_color": "#ffffff",
   "display": "standalone",
   "display_override": ["fullscreen"],
