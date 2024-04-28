@@ -4,6 +4,7 @@
   "theme_color": "#e4e4e4",
   "background_color": "#ffffff",
   "display": "standalone",
+  "display_override": ["fullscreen"],
   "orientation": "portrait",
   "scope": "/pwaReservation/",
   "start_url": "/pwaReservation/",
