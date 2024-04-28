@@ -35,7 +35,8 @@ this.addEventListener("fetch", (event) => {
       } else {
         return fetch(event.request).then(function (res) {
           return caches.open(cacheData).then(function (cache) {
-            if (cache) cache.put(event.request.url, res.clone());
+            if (!event.request.url.includes("chrome-extension"))
+              cache.put(event.request.url, res.clone());
             return res;
           });
         });
